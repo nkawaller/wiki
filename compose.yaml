@@ -1,0 +1,12 @@
+version: '2'
+services: 
+  go-wiki-app:
+    image: go-wiki-app
+    ports:
+      - "8080:8080"
+    volumes:
+      - wiki-data-volume:/data
+
+volumes:
+  wiki-data-volume:
+
